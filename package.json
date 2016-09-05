@@ -1,0 +1,35 @@
+{
+  "name": "Custom-Research",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "moduleType": [],
+  "author": "Rin-ko",
+  "license": "ISC",
+  "private": true,
+  "keywords": [],
+  "ignore": [
+    "node_modules",
+    "bower_components"
+  ],
+  "devDependencies": {
+    "bourbon": "^4.2.6",
+    "gulp": "^3.9.0",
+    "gulp-livereload": "^3.8.1",
+    "node-sass": "^3.4.1",
+    "nodemon": "^1.8.0",
+    "shelljs": "^0.2.6"
+  },
+  "scripts": {
+    "prestart": "npm install",
+    "start": "node server",
+    "prebuild-css": "npm install",
+    "build-css": "node-sass --include-path scss scss/style.scss scss/style.css",
+    "prewatch-css": "npm run build-css",
+    "watch-css": "node-sass -w --include-path scss scss/style.scss scss/style.css",
+  },
+  "dependencies": {
+    "clone": "^1.0.2",
+    "spa-server": "^0.1.0"
+  }
+}
