@@ -26,7 +26,7 @@
     "prebuild-css": "npm install",
     "build-css": "node-sass --include-path scss scss/style.scss scss/style.css",
     "prewatch-css": "npm run build-css",
-    "watch-css": "node-sass -w --include-path scss scss/style.scss scss/style.css",
+    "watch-css": "node-sass -w --include-path scss scss/style.scss scss/style.css"
   },
   "dependencies": {
     "clone": "^1.0.2",
