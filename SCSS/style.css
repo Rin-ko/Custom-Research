@@ -5982,13 +5982,13 @@ h2 {
       position: relative; }
       @media (max-width: 1260px) {
         .wrap__twoColumns .titleCustom .customHead {
-          padding-top: 2rem; } }
-      @media (device-width: 360px) {
+          padding-top: 1.9rem; } }
+      @media (max-width: 414px) {
         .wrap__twoColumns .titleCustom .customHead {
           font-size: 1.8rem; } }
-      @media (device-width: 320px) {
+      @media (max-width: 320px) {
         .wrap__twoColumns .titleCustom .customHead {
-          font-size: 1.8rem; } }
+          font-size: 1.7rem; } }
       .wrap__twoColumns .titleCustom .customHead:after {
         content: "";
         background: #37c3ff;
