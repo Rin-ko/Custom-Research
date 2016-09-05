@@ -343,9 +343,8 @@ th {
     margin-top: 7rem; }
     @media (max-width: 770px) {
       .wrap__pros {
-        flex-direction: column;
         align-items: center; } }
-    @media (max-device-width: 768px) and (orientation: portrait) {
+    @media (device-width: 768px) and (orientation: portrait) {
       .wrap__pros {
         position: relative;
         height: 450px; } }
@@ -1390,7 +1389,7 @@ th {
               width: 80%;
               padding-left: 50px;
               background: url("../img/picBinocle.png") no-repeat top left;
-              height: 20px; } }
+              height: 40px; } }
         .wrap__articleFaq .articleRightPanel .articleMainRight .articleFaqCategory .recentlyViewed {
           margin-top: 2.6rem;
           border-bottom: 1px solid #b7b7b7;
@@ -2399,7 +2398,7 @@ th {
   display: -ms-flexbox;
   display: flex;
   padding-top: 6rem; }
-  @media (max-width: 790px) {
+  @media (max-width: 1024px) {
     .OurProsTop {
       flex-direction: column; } }
 
@@ -2411,37 +2410,62 @@ th {
   display: -moz-box;
   display: -ms-flexbox;
   display: flex; }
-  @media (max-width: 790px) {
+  @media (max-width: 1024px) {
     .OurProsBottom {
       flex-direction: column; } }
+  @media (device-width: 1024px) {
+    .OurProsBottom {
+      padding-left: 4.3rem;
+      padding-right: 4.3rem; } }
   .OurProsBottom__img {
     background: url("../img/imgSatisfactionGarentee.jpg") no-repeat;
     min-width: 369px; }
-    @media (max-width: 790px) {
+    @media (max-width: 1024px) {
       .OurProsBottom__img {
         min-width: inherit;
         background-size: contain;
         min-height: 369px; } }
-    @media (max-width: 650px) {
+    @media (device-width: 1024px) {
       .OurProsBottom__img {
-        min-height: 300px; } }
-    @media (max-width: 500px) {
+        background-size: cover; } }
+    @media (device-width: 360px) {
       .OurProsBottom__img {
-        min-height: 250px; } }
-    @media (max-width: 400px) {
+        min-height: 166px; } }
+    @media (device-width: 412px) {
       .OurProsBottom__img {
-        min-height: 180px; } }
+        min-height: 193px; } }
+    @media (device-width: 320px) {
+      .OurProsBottom__img {
+        min-height: 145px; } }
+    @media (device-width: 375px) {
+      .OurProsBottom__img {
+        min-height: 173px; } }
+    @media (device-width: 414px) {
+      .OurProsBottom__img {
+        min-height: 194px; } }
+    @media (device-width: 768px) {
+      .OurProsBottom__img {
+        min-height: 379px; } }
   .OurProsBottom__rightBar {
     padding-top: 2.7rem;
     padding-left: 3.3rem;
     background: #f6f6f6; }
-    @media (max-width: 1200px) {
+    @media (max-width: 1023px) {
       .OurProsBottom__rightBar {
-        max-width: 370px; } }
+        max-width: 370px;
+        padding-bottom: 0px; } }
+    @media (device-width: 1024px) {
+      .OurProsBottom__rightBar {
+        padding: 30px 30px 0 30px; } }
+    @media (device-width: 412px) {
+      .OurProsBottom__rightBar {
+        padding-right: 3rem; } }
+    @media (device-width: 414px) {
+      .OurProsBottom__rightBar {
+        padding-right: 3rem; } }
     @media (max-width: 790px) {
       .OurProsBottom__rightBar {
-        max-width: none;
-        width: 94.9%; } }
+        max-width: none; } }
   .OurProsBottom__title {
     font-family: 'Oswald', sans-serif;
     color: #666666;
@@ -2461,9 +2485,15 @@ th {
 
 .OurProsTopLeftBar {
   margin-right: 3rem; }
-  @media (max-width: 790px) {
+  @media (max-width: 1024px) {
     .OurProsTopLeftBar {
       margin-right: 0rem; } }
+
+@media (device-width: 1024px) {
+  .OurProsTopRightBar {
+    width: auto;
+    margin-left: 4.3rem;
+    margin-right: 4.3rem; } }
 
 .fairPricingPolicy {
   background: #f6f6f6;
@@ -2471,11 +2501,16 @@ th {
   @media (max-width: 790px) {
     .fairPricingPolicy {
       width: auto; } }
+  @media (device-width: 1024px) {
+    .fairPricingPolicy {
+      width: auto;
+      margin-left: 4.3rem;
+      margin-right: 4.3rem; } }
   .fairPricingPolicy__img {
     background: url("../img/imgFairPricing.jpg") no-repeat;
     background-size: cover;
     min-height: 181px; }
-    @media (max-width: 790px) {
+    @media (max-width: 1024px) {
       .fairPricingPolicy__img {
         min-height: 370px;
         background-size: cover; } }
@@ -2502,6 +2537,11 @@ th {
   @media (max-width: 790px) {
     .CustomerSupport24on7 {
       width: auto; } }
+  @media (device-width: 1024px) {
+    .CustomerSupport24on7 {
+      width: auto;
+      margin-left: 4.3rem;
+      margin-right: 4.3rem; } }
   .CustomerSupport24on7__title {
     font-family: 'Oswald', sans-serif;
     color: #666666;
@@ -2525,8 +2565,10 @@ th {
   display: flex; }
   @media (max-width: 1200px) {
     .TopRightBarTop {
-      flex-direction: column;
-      max-width: 370px; } }
+      flex-direction: column; } }
+  @media (max-width: 1024px) {
+    .TopRightBarTop {
+      padding-bottom: 30px; } }
   @media (max-width: 790px) {
     .TopRightBarTop {
       max-width: inherit; } }
@@ -2539,9 +2581,17 @@ th {
     background-size: cover;
     min-width: 370px;
     min-height: 340px; }
-    @media (max-width: 1200px) {
+    @media (max-width: 1023px) {
       .TopRightBarTop__img {
-        background-size: contain; } }
+        background-size: contain;
+        min-height: 160px; } }
+    @media (device-width: 1024px) {
+      .TopRightBarTop__img {
+        background-size: cover;
+        background-position-y: -190px; } }
+    @media (device-width: 768px) {
+      .TopRightBarTop__img {
+        min-height: 368px; } }
     @media (max-width: 790px) {
       .TopRightBarTop__img {
         background-size: cover; } }
@@ -2583,6 +2633,10 @@ th {
   @media (max-width: 790px) {
     .TopRightBarBottomLeftBlock {
       width: 100%; } }
+  @media (device-width: 1024px) {
+    .TopRightBarBottomLeftBlock {
+      width: auto;
+      margin-right: 0; } }
   .TopRightBarBottomLeftBlock__img {
     background: url("../img/imgPrivateSecure.jpg") no-repeat;
     min-height: 188px; }
@@ -2590,6 +2644,10 @@ th {
       .TopRightBarBottomLeftBlock__img {
         min-height: 370px;
         background-size: cover; } }
+    @media (device-width: 1024px) {
+      .TopRightBarBottomLeftBlock__img {
+        background-size: cover;
+        background-position-y: -60px; } }
   .TopRightBarBottomLeftBlock__title {
     font-family: 'Oswald', sans-serif;
     color: #666666;
@@ -2616,6 +2674,10 @@ th {
   @media (max-width: 790px) {
     .TopRightBarBottomRightBlock {
       width: 100%; } }
+  @media (max-width: 1024px) {
+    .TopRightBarBottomRightBlock {
+      width: auto;
+      padding-bottom: 30px; } }
   .TopRightBarBottomRightBlock__img {
     min-height: 130px;
     background: url("../img/imgPlagiarismProof.png") no-repeat 35px 47px;
@@ -5404,6 +5466,10 @@ a {
     .titleMeet {
       text-align: center;
       width: 1024px; } }
+  @media (device-width: 360px) {
+    .titleMeet {
+      padding-left: 10px;
+      padding-right: 10px; } }
 
 h2 {
   font-weight: normal; }
@@ -5703,6 +5769,9 @@ h2 {
     @media (max-width: 400px) {
       .wrap__makeLifeDiff .featuresList ul {
         font-size: 1.8rem; } }
+    @media (max-width: 767px) {
+      .wrap__makeLifeDiff .featuresList ul {
+        line-height: 1.8; } }
     .wrap__makeLifeDiff .featuresList ul li {
       padding-left: 2.5rem; }
       @media (max-width: 420px) {
@@ -5810,10 +5879,7 @@ h2 {
         margin-bottom: 4.4rem; } }
     @media (max-width: 350px) {
       .wrap__subscribeSave .subscribe {
-        font-size: 2.5rem; } }
-    @media (max-width: 320px) {
-      .wrap__subscribeSave .subscribe {
-        font-size: 2.5rem; } }
+        font-size: 3.2rem; } }
   .wrap__subscribeSave .subscribeAbout {
     font-family: 'open_sansregular', sans-serif;
     font-size: 1.8rem;
@@ -5917,6 +5983,12 @@ h2 {
       @media (max-width: 1260px) {
         .wrap__twoColumns .titleCustom .customHead {
           padding-top: 2rem; } }
+      @media (device-width: 360px) {
+        .wrap__twoColumns .titleCustom .customHead {
+          font-size: 2rem; } }
+      @media (device-width: 320px) {
+        .wrap__twoColumns .titleCustom .customHead {
+          font-size: 2rem; } }
       .wrap__twoColumns .titleCustom .customHead:after {
         content: "";
         background: #37c3ff;

@@ -256,11 +256,10 @@ overflow: hidden;
     //}
 
     @media (max-width: 770px) {
-      flex-direction: column;
       align-items: center;
     }
 
-    @media (max-device-width:768px) and (orientation: portrait){
+    @media (device-width:768px) and (orientation: portrait){
       position:relative;
       height:450px;
     }
@@ -1833,7 +1832,7 @@ background: $main-hover;
                 width: 80%;
                 padding-left: 50px;
                 background: url("../img/picBinocle.png") no-repeat top left;
-                height:20px;
+                height:40px;
               }
 
             }
@@ -3202,7 +3201,7 @@ background: $main-hover;
   //flex-wrap: wrap;
   padding-top: 6rem;
 
-  @media (max-width: 790px) {
+  @media (max-width: 1024px) {
     flex-direction: column;
   }
 
@@ -3212,32 +3211,57 @@ background: $main-hover;
   margin-top: 3rem;
   display:-webkit-flex;  display:-webkit-box;  display:-moz-flex;  display:-moz-box;  display:-ms-flexbox;  display:flex;
 
-  @media (max-width: 790px) {
+  @media (max-width: 1024px) {
     flex-direction: column;
+  }
+  @media (device-width: 1024px) {
+    padding-left: 4.3rem;
+    padding-right: 4.3rem;
   }
 
   &__img {
     background: url("../img/imgSatisfactionGarentee.jpg") no-repeat;
     min-width: 369px;
 
-    @media (max-width: 790px) {
+    @media (max-width: 1024px) {
       min-width: inherit;
       //min-width: auto;
       background-size: contain;
       min-height: 369px;
     }
-
-    @media (max-width: 650px) {
-      min-height: 300px;
+    @media (device-width: 1024px) {
+      background-size: cover;
+    }
+    @media (device-width: 360px) {
+      min-height:166px;
+    }
+    @media (device-width: 412px) {
+      min-height:193px;
+    }
+    @media (device-width: 320px) {
+      min-height:145px;
+    }
+    @media (device-width: 375px) {
+      min-height:173px;
+    }
+    @media (device-width: 414px) {
+      min-height:194px;
+    }
+    @media (device-width: 768px) {
+      min-height:379px;
     }
 
-    @media (max-width: 500px) {
-      min-height: 250px;
-    }
-
-    @media (max-width: 400px) {
-      min-height: 180px;
-    }
+    //@media (max-width: 650px) {
+    //  min-height: 300px;
+    //}
+    //
+    //@media (max-width: 500px) {
+    //  min-height: 250px;
+    //}
+    //
+    //@media (max-width: 400px) {
+    //  min-height: 180px;
+    //}
 
   }
   &__rightBar {
@@ -3245,13 +3269,24 @@ background: $main-hover;
     padding-left: 3.3rem;
     background: #f6f6f6;
 
-    @media (max-width: 1200px) {
+    @media (max-width: 1023px) {
       max-width: 370px;
+      padding-bottom:0px;
+    }
+    @media (device-width: 1024px) {
+      padding: 30px 30px 0 30px;
+    }
+    @media (device-width: 412px) {
+      padding-right:3rem;
+    }
+    @media (device-width: 414px) {
+      padding-right:3rem;
     }
 
     @media (max-width: 790px) {
       max-width: none;
-      width: 94.9%;
+      //width: 94.9%;
+      //padding:3rem;
     }
 
   }
@@ -3276,12 +3311,19 @@ background: $main-hover;
 .OurProsTopLeftBar {
   margin-right: 3rem;
 
-  @media (max-width: 790px) {
+  @media (max-width: 1024px) {
     margin-right: 0rem;
   }
 }
 
 .OurProsTopRightBar {
+
+
+  @media (device-width: 1024px) {
+    width: auto;
+    margin-left: 4.3rem;
+    margin-right: 4.3rem;
+  }
 
 }
 
@@ -3292,13 +3334,18 @@ background: $main-hover;
   @media (max-width: 790px) {
     width: auto;
   }
+  @media (device-width: 1024px) {
+    width: auto;
+    margin-left: 4.3rem;
+    margin-right: 4.3rem;
+  }
 
   &__img {
     background: url("../img/imgFairPricing.jpg") no-repeat;
     background-size: cover;
     min-height: 181px;
 
-    @media (max-width: 790px) {
+    @media (max-width: 1024px) {
       min-height: 370px;
       background-size: cover;
     }
@@ -3327,6 +3374,11 @@ background: $main-hover;
   @media (max-width: 790px) {
     width: auto;
   }
+  @media (device-width: 1024px) {
+    width: auto;
+    margin-left: 4.3rem;
+    margin-right: 4.3rem;
+  }
 
   &__title {
     @include titlePrices;
@@ -3343,7 +3395,10 @@ background: $main-hover;
 
   @media (max-width: 1200px) {
     flex-direction: column;
-    max-width: 370px;
+    //max-width: 370px;
+  }
+  @media (max-width: 1024px) {
+    padding-bottom:30px;
   }
 
   @media (max-width: 790px) {
@@ -3362,8 +3417,16 @@ background: $main-hover;
     min-width: 370px;
     min-height: 340px;
 
-    @media (max-width: 1200px) {
+    @media (max-width: 1023px) {
       background-size: contain;
+      min-height:160px;
+    }
+    @media (device-width: 1024px) {
+      background-size: cover;
+      background-position-y: -190px;
+    }
+    @media (device-width: 768px) {
+      min-height:368px;
     }
 
     @media (max-width: 790px) {
@@ -3408,6 +3471,10 @@ background: $main-hover;
   @media (max-width: 790px) {
     width: 100%;
   }
+  @media (device-width: 1024px) {
+    width: auto;
+    margin-right:0;
+  }
   &__img {
     background: url("../img/imgPrivateSecure.jpg") no-repeat;
     min-height: 188px;
@@ -3415,6 +3482,10 @@ background: $main-hover;
     @media (max-width: 790px) {
       min-height: 370px;
       background-size: cover;
+    }
+    @media (device-width: 1024px) {
+      background-size: cover;
+      background-position-y:-60px;
     }
 
   }
@@ -3442,6 +3513,10 @@ background: $main-hover;
 
   @media (max-width: 790px) {
     width: 100%;
+  }
+  @media (max-width: 1024px) {
+    width: auto;
+    padding-bottom:30px;
   }
 
   &__img {
